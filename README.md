@@ -12,3 +12,6 @@ command:
 ```bash
 python compare.py
 ```
+
+You may change the variable `im_num` to benchmark the download speed for
+different numbers of images.
