@@ -1,7 +1,15 @@
 import requests
 
 
-from compare import read_urls
+def read_urls(txt_path):
+    urls = []
+    with open(txt_path, 'r') as f:
+        for line in f:
+            line = line.replace('\n', '')
+            if line:
+                urls.append(line)
+    return urls
+
 
 
 def main():
